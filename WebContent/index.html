@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>语音播报</title>
+</head>
+<body>
+<style type="text/css">
+body{background-color:#fff;text-align:center;padding-top:50px;}
+#Result{border:3px solid #40AA53;margin:0 auto;text-align:center;width:400px;padding:50px 0;background:#efe;}
+</style>
+<div id="Result">
+	习大大
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/speech/jQuery.speech.min.js"></script>
+<script>
+	$('#Result').speech({
+		"speech": true,
+		"speed": 1,
+		"bg": "./images/speech.png"
+	});
+</script>
+</body>
+</html>

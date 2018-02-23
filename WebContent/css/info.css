@@ -1,0 +1,31 @@
+/*-- About Us --*/
+section.about-us {
+	padding:100px 0;
+}
+section.about-us h3.text-center {
+	color:#948787;
+}
+section.about-us h3.text-center,section.our-services h3.text-center,section.our-info h3.text-center,section.our-gallery  h3.text-center,section.our-blog h3.text-center,section.curriculum h3.text-center,section.our-contacts h3.text-center   {
+	font-size:40px;
+	padding:20px 0;
+	font-weight:500;
+	font-family: 'Viga', sans-serif;
+	    color: #222;
+}
+section.about-us p.text-center,section.our-services p.text-center,section.our-info p.text-center,section.our-gallery p.text-center,section.our-blog p.text-center,section.curriculum p.text-center, section.our-contacts p.text-center  {
+	    font-size: 18px;
+    font-weight: 400;
+    padding: 0px 0 80px;
+    color: #5F5C5C;
+}
+section.about-us .row.below {
+    padding-top: 30px;
+}
+section.about-us .about-info p {
+	    font-size: 15px;
+    font-weight: 400;
+    line-height: 29px;
+	/*-- Agile ITS --*/
+    color: #777;
+}
+/*-- /About Us --*/

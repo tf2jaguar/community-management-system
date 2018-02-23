@@ -1,0 +1,11 @@
+/*main_contact*/
+html{ SCROLLBAR-FACE-COLOR: #538ec6; SCROLLBAR-HIGHLIGHT-COLOR: #dce5f0; SCROLLBAR-SHADOW-COLOR: #2c6daa; SCROLLBAR-3DLIGHT-COLOR: #dce5f0; SCROLLBAR-ARROW-COLOR: #2c6daa;  SCROLLBAR-TRACK-COLOR: #dce5f0;  SCROLLBAR-DARKSHADOW-COLOR: #dce5f0; overflow-x:hidden;}
+.main_contact1{ float:left;}
+.main_images{ border:1px #cccccc solid; padding:2px;}
+.main_changes{ background:#ededb2; padding:4px 0;}
+.main_about{ padding:0 10px; float:left;}
+.main_kuang{background:url(../admin_image/bg1.jpg) repeat-x top left; font-weight:bold;}
+.main_nav_bg{ background:url(../admin_image/contact_bg.jpg) repeat-x; height:25px; padding-top:2px; float:left;}
+.main_td1{background:url(../admin_image/copybg.jpg) no-repeat left; height:44px; color:#bb1414; text-align:left; padding:17px 0 0 22px;}
+a.main_td2:link,a.main_td2:visited{ color:#666666}
+a.main_td2:hover,a.main_td2:active{color:#bb1414}
