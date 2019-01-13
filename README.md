@@ -17,6 +17,7 @@
 * Java servlet & jsp
 * Mysql 数据库
 * c3p0连接池
+* 封装Page类 用以数据库分页
 * JavaScript & jQuery
 * 使用bootstrap搭建前端展示界面
 
