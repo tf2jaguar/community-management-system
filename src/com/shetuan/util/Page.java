@@ -5,10 +5,13 @@ package com.shetuan.util;
  */
 public class Page {
 	private int itemCont;//数据总数
+	@SuppressWarnings("unused")
 	private int pageCont;//页面总数
 	private int pageCurrent;//当前页
 	private int pageSize;//每页的大小
+	@SuppressWarnings("unused")
 	private int itemStart;//开始页
+	@SuppressWarnings("unused")
 	private int itemEnd;//结束页
 	
 	public Page(){
@@ -43,7 +46,7 @@ public class Page {
 	public void setItemEnd(int itemEnd) {
 		this.itemEnd = itemEnd;
 	}
-	//��ҳ�����߼��������
+	//计算总的页数
 	public int getPageCont() {
 		return itemCont % pageSize == 0 ? itemCont / pageSize:(itemCont / pageSize +1);
 	}

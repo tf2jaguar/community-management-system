@@ -43,45 +43,38 @@ public class MemberInfoUpdate extends HttpServlet {
 				FileItemFactory factory = new DiskFileItemFactory();
 				ServletFileUpload upload = new ServletFileUpload(factory);
 
+				@SuppressWarnings("unchecked")
 				List<FileItem> /* FileItem */ items = upload.parseRequest(request);
 
+				@SuppressWarnings("rawtypes")
 				Iterator iter = items.iterator();
 				while (iter.hasNext()) {
 					FileItem item = (FileItem) iter.next();
 
 					if (item.isFormField()) {
-						// �������ͨ�ı��ؼ�
+						// 获取文件名和类型
 						String name = item.getFieldName();
 						String value = item.getString("utf-8");
 						fromFilds.put(name, value);
 
 					} else {
-						// �ļ��ؼ�
-						// �ؼ�����
+						
+						@SuppressWarnings("unused")
 						String fieldName = item.getFieldName();
-						// �ļ�ԭ������
 						fileName = item.getName();
 						System.out.println("fileName " + fileName.length());
 						if (fileName.length() > 0) {
-							// Ψһһ���ļ�����
+		
 							try {
 								fileName = UUID.randomUUID() + fileName.substring(fileName.lastIndexOf("."));
 							} catch (StringIndexOutOfBoundsException e) {
 								System.out.println("String index out of range: -1");
 							}
 
-							// �ļ�����
-							// String contentType = item.getContentType();
-							// �Ƿ����ڴ���
-							// boolean isInMemory = item.isInMemory();
-							// �ļ���С
-							// long sizeInBytes = item.getSize();
-
-							// �����Ŀ���ļ�·��
+							@SuppressWarnings("unused")
 							String strDirPath = request.getSession().getServletContext().getRealPath("header");
-							// System.out.println("�ļ�·��"+strDirPath);
 							String sysDirPath = "F:\\tianhaiworks\\shetuan\\WebContent\\header";
-							// �����ļ�,��ĿĿ¼
+							// 
 							File uploadFile = new File(sysDirPath + "//" + fileName);
 
 							item.write(uploadFile);
@@ -92,7 +85,7 @@ public class MemberInfoUpdate extends HttpServlet {
 				}
 
 				Member member = new Member();
-				member.setLoginName(Integer.parseInt(fromFilds.get("loginname")));
+				member.setLoginName(fromFilds.get("loginname"));
 				member.setMemberName(fromFilds.get("username"));
 				member.setMemberGender(fromFilds.get("gender"));
 				member.setMemberAdd(fromFilds.get("add"));

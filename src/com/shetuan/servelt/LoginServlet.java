@@ -56,7 +56,7 @@ public class LoginServlet extends HttpServlet {
 				request.getSession().setAttribute("login", login);
 				response.sendRedirect("index.jsp");
 				return;
-			} else if (log.equals("admin")) {// 登录到后天
+			} else if (log.equals("admin")) {// 登录到后台
 				Member member = memberdao.getMemberByName(login.getLoginName());
 				request.getSession().setAttribute("member", member);
 				response.sendRedirect("admin");

@@ -48,7 +48,7 @@ public class MemberDao extends BaseDao {
 			// 如果结果集存在，获取对应字段将其赋值给一个新的member对象，并将其添加到members集合中
 			while (rs.next()) {
 				Member member = new Member();
-				member.setLoginName(Integer.parseInt(rs.getString("login_name")));
+				member.setLoginName(rs.getString("login_name"));
 				member.setMemberName(rs.getString("member_name"));
 				member.setMemberGender(rs.getString("member_gender"));
 				member.setManagerId(rs.getInt("manager_id"));
@@ -88,7 +88,7 @@ public class MemberDao extends BaseDao {
 			ResultSet rs = (ResultSet) ps.executeQuery();
 			//如果结果集存在，获取对应的字段将其赋值都给member对象
 			while (rs.next()) {
-				member.setLoginName(Integer.parseInt(rs.getString("login_name")));
+				member.setLoginName(rs.getString("login_name"));
 				member.setMemberName(rs.getString("member_name"));
 				member.setMemberGender(rs.getString("member_gender"));
 				member.setManagerId(rs.getInt("manager_id"));
@@ -304,7 +304,7 @@ public class MemberDao extends BaseDao {
 			//如果结果集不为空，获取相应字段，赋值给一个新的member对象，并将其添加到members集合
 			while (rs.next()) {
 				Member member = new Member();
-				member.setLoginName(Integer.parseInt(rs.getString("login_name")));
+				member.setLoginName(rs.getString("login_name"));
 				member.setMemberName(rs.getString("member_name"));
 				member.setMemberGender(rs.getString("member_gender"));
 				member.setManagerId(rs.getInt("manager_id"));

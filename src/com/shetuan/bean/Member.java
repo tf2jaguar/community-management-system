@@ -2,7 +2,7 @@ package com.shetuan.bean;
 
 public class Member {
 	//登录名
-	private int loginName;
+	private String loginName;
 	//登录权限
 	private int managerId;
 	//成员姓名
@@ -40,10 +40,10 @@ public class Member {
 	public void setIsJoinCommunity(int isJoinCommunity) {
 		this.isJoinCommunity = isJoinCommunity;
 	}
-	public int getLoginName() {
+	public String getLoginName() {
 		return loginName;
 	}
-	public void setLoginName(int loginName) {
+	public void setLoginName(String loginName) {
 		this.loginName = loginName;
 	}
 	public int getManagerId() {

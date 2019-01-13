@@ -104,7 +104,7 @@ public class BaseDao {
 				connection.close();
 			}
 		} catch (SQLException e) {
-			System.out.println("�ͷ���Դʧ�ܡ�����");
+			System.out.println("关闭失败！");
 		}
 	}
 }

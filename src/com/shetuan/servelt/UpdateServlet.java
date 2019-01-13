@@ -26,7 +26,7 @@ public class UpdateServlet extends HttpServlet {
 			throws ServletException, IOException {
 		LoginDao logindao = new LoginDao();
 		String ope = request.getParameter("ope");
-		System.out.println("Updateservlet�е�ope: " + ope);
+		System.out.println("Updateservlet " + ope);
 		if (ope.equals("mupdate")) {
 			/**
 			 * MemberUpdate
@@ -38,7 +38,7 @@ public class UpdateServlet extends HttpServlet {
 			Login db_login = logindao.getLoginByName(username);
 
 			System.out.println("loginservlet->update");
-			if (db_login == null) {// Ϊ�գ�����¼��������
+			if (db_login == null) {
 				request.getRequestDispatcher("manager_update.jsp?rs=namewrong").forward(request, response);
 			} else {
 				String db_pass = db_login.getLoginPass();
@@ -48,10 +48,10 @@ public class UpdateServlet extends HttpServlet {
 				} else {
 					int rs = logindao.updatePassword(Integer.parseInt(username), uppass2);
 					if (rs > 0) {
-						System.out.println("rs>0��" + rs);
+						System.out.println("rs>0 " + rs);
 						response.sendRedirect("manager_update.jsp?rs=success");
 					} else {
-						System.out.println("����ʧ��" + rs);
+						System.out.println("更新失败" + rs);
 						request.getRequestDispatcher("manager_update.jsp?rs=fail").forward(request, response);
 					}
 				}

@@ -33,7 +33,7 @@ public class RegistServlet extends HttpServlet {
 		MemberDao memberDao = new MemberDao();
 		CommunityDao communitydao = new CommunityDao();
 		Object ope = request.getParameter("ope");
-		System.out.println("registServlet�е�ope��" + ope);
+		System.out.println("registServlet" + ope);
 
 		if (ope.equals("manager")) {
 			/**
@@ -48,7 +48,7 @@ public class RegistServlet extends HttpServlet {
 			login.setManagerId(Integer.parseInt(managerId));
 			String judge = logindao.addLogin(login);
 			if (judge.equals("success")) {
-				System.out.println("��ӳɹ�");
+				System.out.println("登录成功");
 				request.getRequestDispatcher("admin/manager_add.jsp?rs=success").forward(request, response);
 			} else if (judge.equals("exist")) {
 				request.getRequestDispatcher("admin/manager_add.jsp?rs=exist").forward(request, response);
@@ -71,7 +71,7 @@ public class RegistServlet extends HttpServlet {
 			member.setMemberPhone(userphone);
 			String judge = memberDao.addIndexLogin(login, member);
 			if (judge.equals("success")) {
-				System.out.println("��ӳɹ�");
+				System.out.println("注册成功");
 				request.getRequestDispatcher("regist.jsp?rs=success").forward(request, response);
 			} else if (judge.equals("exist")) {
 				request.getRequestDispatcher("regist.jsp?rs=exist").forward(request, response);
@@ -83,14 +83,13 @@ public class RegistServlet extends HttpServlet {
 			/**
 			 * CommunityRegist
 			 */
-			System.out.println("����community������");
 
 			String cname = request.getParameter("communityName");
 			String crname = request.getParameter("createrName");
 
 			int createrId = memberDao.getLoginNameByName(crname);
 			if (createrId == 0) {
-				System.out.println("û��" + crname + "�û�,�������ʧ��");
+				System.out.println("创建者 " + crname );
 				request.getRequestDispatcher("admin/community_add.jsp?rs=mNotIn").forward(request, response);
 			} else {
 				String crdate = request.getParameter("createDate");
@@ -112,7 +111,7 @@ public class RegistServlet extends HttpServlet {
 
 				String judge = communitydao.addAdminCommunity(community);
 				if (judge.equals("success")) {
-					System.out.println("��ӳɹ�");
+					System.out.println("创建成功");
 					request.getRequestDispatcher("admin/community_add.jsp?rs=success").forward(request, response);
 				} else if (judge.equals("exist")) {
 					request.getRequestDispatcher("admin/community_add.jsp?rs=exist").forward(request, response);

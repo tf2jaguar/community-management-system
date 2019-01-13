@@ -32,7 +32,7 @@ public class QueryServlet extends HttpServlet {
 		if (lru.equals("ulist")) {// 查询所有的member，结果集
 
 			String cpagestr = request.getParameter("cpage");
-			System.out.println("MemberServlet-��list cpage:" + cpagestr);
+			System.out.println("MemberServlet-获取所有member:" + cpagestr);
 			int cpage = 1;
 			if (cpagestr != null) {
 				cpage = Integer.parseInt(cpagestr.trim());
@@ -51,7 +51,7 @@ public class QueryServlet extends HttpServlet {
 
 			CommunityDao communitydao = new CommunityDao();
 			String cpagestr = request.getParameter("cpage");
-			System.out.println("communityServlet-��list cpage:" + cpagestr);
+			System.out.println("communityServlet-获取所有社团:" + cpagestr);
 			int cpage = 1;
 			if (cpagestr != null) {
 				cpage = Integer.parseInt(cpagestr.trim());

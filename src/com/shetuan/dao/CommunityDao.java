@@ -28,7 +28,7 @@ public class CommunityDao extends BaseDao {
 			// 获取连接
 			getCon();
 			// 为page分页，查询总记录数
-			String countsql = "SELECT count(1) FROM community as c,member as m,communityclass as cl WHERE c.community_createrId=m.login_name and cl.class_id=c.community_class";
+			String countsql = "SELECT count(1) FROM community as c,member as m,communityclass as cl WHERE c.community_createrId=m.member_id and cl.class_id=c.community_class";
 			// 执行sql
 			exeQuery(countsql);
 			ResultSet countResultSet = (ResultSet) ps.executeQuery();
@@ -39,7 +39,7 @@ public class CommunityDao extends BaseDao {
 				page.setItemCont(count);
 			}
 			// 查询社团的详细信息
-			String sql = "SELECT community_name,m.member_name,c.community_creatDate,c.community_num,c.community_range,cl.class_name,c.community_iscreat FROM community as c,member as m,communityclass as cl WHERE c.community_createrId=m.login_name and cl.class_id=c.community_class ORDER BY c.community_id limit ?,?";
+			String sql = "SELECT community_name,m.member_name,c.community_creatDate,c.community_num,c.community_range,cl.class_name,c.community_iscreat FROM community as c,member as m,communityclass as cl WHERE c.community_createrId=m.member_id and cl.class_id=c.community_class ORDER BY c.community_id limit ?,?";
 			// 执行sql ，传入分页的起始页，每页大小
 			exeQuery(sql, page.getItemStart(), page.getPageSize());
 			// 获取查询结果
