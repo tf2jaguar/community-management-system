@@ -1,10 +1,22 @@
-# CommunityManagementSystem
-## 社团管理系统
+<div align="center">  
+    <p>
+        <a href="https://jelly54.github.io"><img src="https://badgen.net/badge/jelly54/read?icon=sourcegraph&color=4ab8a1" alt="read" /></a>
+        <img src="https://badgen.net/github/stars/jelly54/community-management-system?icon=github&color=4ab8a1" alt="stars" />
+        <img src="https://badgen.net/github/forks/jelly54/community-management-system?icon=github&color=4ab8a1" alt="forks" />
+        <img src="https://badgen.net/github/open-issues/jelly54/community-management-system?icon=github" alt="issues" />
+    </p>
+</div>
+
+
+# 社团管理系统
+
 很早之前学习时的第一个项目，sql文件丢失了，手动写了几个，如需要达到理想的界面展示，需要手动添加一些数据。
 
 
-**更新，部分代码由于不是本人所写，没有上传，导致部分功能不能使用。所有代码仅供参考。项目目前不能友好的跑起来，见谅。**
+**更新，部分代码不是本人所写，没有上传，导致部分功能不能使用。所有代码仅供参考。项目目前不能友好的跑起来，见谅。**
 
+
+---
 
 ### 背景
 > 是为了迎合学校“百团大战”(一种每年都有的社团迎新活动)，为社团迎新开发的管理系统。方便学生浏览申请参加各种社团，同时方便管理者对各社团发送通知，下发文件等管理。
