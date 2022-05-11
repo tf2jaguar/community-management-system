@@ -1,9 +1,9 @@
 <div align="center">  
     <p>
-        <a href="https://jelly54.github.io"><img src="https://badgen.net/badge/jelly54/read?icon=sourcegraph&color=4ab8a1" alt="read" /></a>
-        <img src="https://badgen.net/github/stars/jelly54/community-management-system?icon=github&color=4ab8a1" alt="stars" />
-        <img src="https://badgen.net/github/forks/jelly54/community-management-system?icon=github&color=4ab8a1" alt="forks" />
-        <img src="https://badgen.net/github/open-issues/jelly54/community-management-system?icon=github" alt="issues" />
+        <a href="https://tf2jaguar.github.io"><img src="https://badgen.net/badge/tf2jaguar/read?icon=sourcegraph&color=4ab8a1" alt="read" /></a>
+        <img src="https://badgen.net/github/stars/tf2jaguar/community-management-system?icon=github&color=4ab8a1" alt="stars" />
+        <img src="https://badgen.net/github/forks/tf2jaguar/community-management-system?icon=github&color=4ab8a1" alt="forks" />
+        <img src="https://badgen.net/github/open-issues/tf2jaguar/community-management-system?icon=github" alt="issues" />
     </p>
 </div>
 
@@ -54,70 +54,70 @@
 
 **普通用户登录界面**
 
-![登录界面](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/login.jpg)
+![登录界面](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/login.jpg)
 
 
 **普通用户注册界面**
 
-![注册界面](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/regist.jpg)
+![注册界面](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/regist.jpg)
 
 
 **未登录前主界面展示**
 
-![主界面](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/main.jpg)
+![主界面](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/main.jpg)
 
 
 **未登录前社团概要**
 
-![界面展示0](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/introduction0.jpg)
+![界面展示0](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/introduction0.jpg)
 
 
-![界面展示1](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/introduction1.jpg)
+![界面展示1](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/introduction1.jpg)
 
 
-![界面展示2](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/introduction2.jpg)
+![界面展示2](https://github.com/jelly54/community-management-system/blob/master/screenshot/introduction2.jpg)
 
 
-![界面展示3](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/introduction3.jpg)
+![界面展示3](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/introduction3.jpg)
 
 
 **未登录前社团活动公告**
 
-![公告](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/notes.jpg)
+![公告](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/notes.jpg)
 
 
 **登录后个人信息修改**
 
-![个人信息修改](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/after_login_info.jpg)
+![个人信息修改](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/after_login_info.jpg)
 
 
 **登录后查看社团详细信息**
 
-![社团信息](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/after_login_Cinfo.jpg)
+![社团信息](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/after_login_Cinfo.jpg)
 
 
 **后台登录界面**
 
-![后台主界面](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/admin_main.jpg)
+![后台主界面](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/admin_main.jpg)
 
 
-![后台登录界面](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/admin_login.jpg)
+![后台登录界面](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/admin_login.jpg)
 
 
 **用户管理界面**
 
-![添加用户](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/adduser.jpg)
+![添加用户](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/adduser.jpg)
 
 
-![更新当前密码](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/updatepass.jpg)
+![更新当前密码](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/updatepass.jpg)
 
 
-![用户列表](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/userlist.png)
+![用户列表](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/userlist.png)
 
 
 **社团管理界面**
 
-![添加社团](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/addcommunity.jpg)
+![添加社团](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/addcommunity.jpg)
 
 
-![社团列表](https://github.com/jelly54/CommunityManagementSystem/blob/master/screenshot/communitylist.jpg)
+![社团列表](https://github.com/tf2jaguar/community-management-system/blob/master/screenshot/communitylist.jpg)
